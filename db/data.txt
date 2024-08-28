@@ -1,0 +1,4 @@
+--최초 mariadb 연결한 후 db 생성
+create database priboard;
+show databases;
+
