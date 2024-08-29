@@ -2,3 +2,15 @@
 create database priboard;
 show databases;
 
+create table board (
+    id uuid not null,
+    name varchar(100) not null,
+    description varchar(500) not null,
+    inserter varchar(255),
+    inserted_date_time datetime(6),
+    updater varchar(255),
+    updated_date_time datetime(6),
+    primary key (id)
+);
+
+insert into board(id, name, description, inserter, inserted_date_time, updater, updated_date_time) values('7b9a7c55a9334d049e8a880cf216e28e', 'Q&A', 'Q&A게시판', 'admin', current_timestamp, 'admin', current_timestamp);
