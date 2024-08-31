@@ -25,7 +25,7 @@ spring:
       hibernate:
         jdbc:
           fetch_size: 100
-        # show_sql: true
+        show_sql: true
         format_sql: true
         use_sql_comments: true
 #  servlet:
@@ -34,14 +34,20 @@ spring:
 #      max-request-size: 3MB
 logging:
   level: # logging.level 설정은 로깅의 세부 수준을 정의함. 이를 통해 특정 패키지 또는 클래스의 로그 출력을 제어할 수 있음.
-    org:
-      hibernate:
-        SQL: debug # Hibernate의 SQL 생성 및 실행과 관련된 로그를 제어하는 로거로써, debug로 설정하면 Hibernate가 실행하는 모든 SQL 쿼리가 로그에 출력됨.
-    apache:
-      coyote:
-        http11: debug # Apache Tomcat에서 HTTP/1.1 연결을 처리하는 부분과 관련된 로깅을 제어.
+    root: INFO
+  file:
+    name: logs/${spring.application.name}.log
+#    org:
+#      hibernate:
+#        SQL: debug # Hibernate의 SQL 생성 및 실행과 관련된 로그를 제어하는 로거로써, debug로 설정하면 Hibernate가 실행하는 모든 SQL 쿼리가 로그에 출력됨.
+#    apache:
+#      coyote:
+#        http11: debug # Apache Tomcat에서 HTTP/1.1 연결을 처리하는 부분과 관련된 로깅을 제어.
                       # Tomcat은 Spring Boot 애플리케이션의 기본 임베디드 서블릿 컨테이너로, HTTP 요청을 처리할 때 Coyote라는 HTTP 커넥터를 사용함.
                       # debug로 설정하면 Tomcat이 처리하는 HTTP 요청, 응답, 그리고 커넥션과 관련된 상세 정보가 로그에 출력됨.
+
+api:
+  test-response: hi, test
 
 #file:
 #  dir: /C:\thirtythreego\pri-board-service\file\
