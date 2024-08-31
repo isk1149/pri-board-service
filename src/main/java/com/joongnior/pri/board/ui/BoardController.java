@@ -17,11 +17,17 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/")
+@RequestMapping("/api/v1")
 @Slf4j
 public class BoardController {
     private final Environment env;
     private final BoardService boardService;
+
+    @GetMapping("/test")
+    public String test() {
+        log.info("env.getProperty(\"api.test-response\") = {}", env.getProperty("api.test-response"));
+        return "test";
+    }
 
     @GetMapping("/healthcheck")
     public String healthcheck(@RequestHeader(value = "Accept", defaultValue = "") String acceptHeader) {
