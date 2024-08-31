@@ -3,3 +3,11 @@ GET localhost:65284/healthcheck
 
 ### healthcheck using gateway
 GET localhost:8000/board-service/healthcheck
+
+### getBoards
+GET localhost:52425/boards
+
+### getBoards using gateway
+GET localhost:8000/board-service/boards
+
+
