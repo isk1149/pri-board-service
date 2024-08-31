@@ -1,0 +1,25 @@
+### ResourceNotFoundException
+GET localhost:8000/board-service/boards123
+
+### Method Not Allowed
+PUT localhost:8000/board-service/boards
+
+### EntityNotFoundException
+GET localhost:8000/board-service/entity-not-found-exception
+
+### CannotAcquireLockException
+GET localhost:8000/board-service/cannot-acquire-lock-exception
+
+### RuntimeException
+GET localhost:8000/board-service/runtime-exception
+
+
+### FileNotFoundException
+GET localhost:8000/board-service/file-not-found-exception
+
+### IOFoundException
+GET localhost:8000/board-service/io-exception
+
+
+### Exception
+GET localhost:8000/board-service/exception
