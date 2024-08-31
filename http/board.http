@@ -1,0 +1,19 @@
+### test
+GET localhost:65284/healthcheck
+
+### test using gateway
+GET {{BASE_URL}}/board-service/api/v1/test
+
+### healthcheck
+GET localhost:65284/healthcheck
+
+### healthcheck using gateway
+GET {{BASE_URL}}/board-service/api/v1/healthcheck
+
+### getBoards
+GET localhost:58670/api/v1/boards
+
+### getBoards using gateway
+GET {{BASE_URL}}/board-service/api/v1/boards
+
+
