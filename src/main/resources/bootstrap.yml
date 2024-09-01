@@ -3,3 +3,6 @@ spring:
     config:
       uri: http://127.0.0.1:8888
       name: pri-board-service
+      #profile: dev #prod
+      #서버 환경(dev, prod)에 따라 애플리케이션 실행 스크립트에서 동적으로 설정. ex) java -jar myapp.jar --spring.profiles.active=dev
+      #로컬은 별도 profile 설정 없는 것으로 진행함(config server의 application-name.yml 혹은 application.yml 파일 참조함)
