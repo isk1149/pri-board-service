@@ -41,6 +41,13 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
 	implementation 'org.mariadb.jdbc:mariadb-java-client:3.3.3'
 
+	//Spring Cloud에서 Config Server와 통신하고, 이를 통해 애플리케이션의 설정을 외부에서 관리할 수 있도록 함
+	//bootstrap을 통해 Config Server에서 설정 정보를 가져옴
+	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+	//애플리케이션이 시작되기 전에 원격 Config Server로부터 환경 설정을 가져오고, 이를 애플리케이션 컨텍스트에서 사용할 수 있도록 함
+	//bootstrap.yml이나 bootstrap.properties에 Config Server 정보를 설정
+	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
