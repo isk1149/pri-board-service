@@ -5,4 +5,6 @@ spring:
       name: pri-board-service
       #profile: dev #prod
       #서버 환경(dev, prod)에 따라 애플리케이션 실행 스크립트에서 동적으로 설정. ex) java -jar myapp.jar --spring.profiles.active=dev
-      #로컬은 별도 profile 설정 없는 것으로 진행함(config server의 application-name.yml 혹은 application.yml 파일 참조함)
+      #local 환경은 config server에 application-name-profile.yml 파일을 별도로 만들지 않았으므로
+      #ex) pri-board-service-local.yml 파일을 만들지 않았으므로
+      #application-name.yml 파일 참조함(pri-board-service.yml 파일 참조함)
