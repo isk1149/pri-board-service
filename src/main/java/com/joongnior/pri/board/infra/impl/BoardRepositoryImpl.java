@@ -20,7 +20,7 @@ public class BoardRepositoryImpl implements BoardReposirotyQueryDsl {
 
     @Override
     public List<BoardEntity> getBoards() {
-        log.info("BoardRepositoryImpl getBoards start");
+        log.info("BoardRepositoryImpl.getBoards start");
         return jpaQueryFactory
                 .select(boardEntity)
                 .from(boardEntity)

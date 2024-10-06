@@ -20,7 +20,7 @@ public class BoardServiceImpl implements BoardService {
 
     @Override
     public List<BoardDto> getBoards() {
-        log.info("BoardServiceImpl getBoards start");
+        log.info("BoardServiceImpl.getBoards start");
         List<BoardDto> boardDtos = new ArrayList<>();
 
         List<BoardEntity> boardEntities = boardRepository.getBoards();

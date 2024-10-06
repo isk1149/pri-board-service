@@ -46,7 +46,7 @@ public class BoardController {
 
     @GetMapping("/boards")
     public ResponseEntity<ResponseDto<List<BoardDto>>> getBoards() {
-        log.info("BoardController getBoards start");
+        log.info("BoardController.getBoards start");
         List<BoardDto> boardDtos = boardService.getBoards();
         /*
         Lombok이 빌더 패턴을 생성할 때, 제네릭 타입을 올바르게 추론하지 못하고 기본적으로 Object 타입을 사용한다.
