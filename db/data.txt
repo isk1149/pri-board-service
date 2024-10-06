@@ -1,5 +1,5 @@
 --최초 mariadb 연결한 후 db 생성
-create database priboard;
+create database db_pri_board_dev;
 show databases;
 
 create table board (
@@ -15,3 +15,4 @@ create table board (
 
 insert into board(id, name, description, inserter, inserted_date_time, updater, updated_date_time) values('7b9a7c55a9334d049e8a880cf216e28e', 'Q&A', 'Q&A게시판', 'admin', current_timestamp, 'admin', current_timestamp);
 insert into board(id, name, description, inserter, inserted_date_time, updater, updated_date_time) values('9292264cc3aa410b96d14c7ea2b5f335', '커뮤니티', '커뮤니티게시판', 'admin', current_timestamp, 'admin', current_timestamp);
+insert into board(id, name, description, inserter, inserted_date_time, updater, updated_date_time) values('1298464abcda410b78d14c7ea2b5f126', '공지사항', '공지사항게시판', 'admin', current_timestamp, 'admin', current_timestamp);
